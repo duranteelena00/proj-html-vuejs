@@ -1,9 +1,9 @@
 <template>
   <main>
-    <section id="about-us">
+    <section id="about-the-company">
       <div class="container"></div>
     </section>
-    <section id="our-services">
+    <section id="company-services">
       <div class="container"></div>
     </section>
     <section id="pricing-plans">

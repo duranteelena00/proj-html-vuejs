@@ -5,7 +5,7 @@
       <div class="container"></div>
     </section>
     <section id="newsletter"></section>
-    <section id="contact-us">
+    <section id="contact-the-company">
       <div class="container">
         <div class="form"></div>
         <div id="contacts"></div>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Main from "./components/Main.vue";
+import Main from "@/components/Main.vue";
 
 export default {
   name: "Content",
@@ -35,5 +35,5 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>
