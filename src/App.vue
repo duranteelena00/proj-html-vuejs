@@ -1,24 +1,24 @@
 <template>
   <div id="app">
     <Header />
-    <Main />
+    <Content />
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Main from './components/Main.vue';
-import Footer from './components/Header.vue'
+import Header from "./components/Header.vue";
+import Content from "./components/Content.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
-    Main,
-    Footer
-  }
-}
+    Content,
+    Footer,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -29,7 +29,8 @@ export default {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100vw;
   height: 100%;
   overflow-x: hidden;

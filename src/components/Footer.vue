@@ -1,5 +1,12 @@
 <template>
-  <footer></footer>
+  <section>
+    <footer id="info">
+      <div class="container"></div>
+    </footer>
+    <footer id="copyright">
+      <div class="container"></div>
+    </footer>
+  </section>
 </template>
 
 <script>
