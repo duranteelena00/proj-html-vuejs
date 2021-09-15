@@ -19,7 +19,7 @@
     <section class="jumbotron" id="hero">
       <img src="@/assets/img/hero-image.png" alt="" />
       <nav id="main-menu">
-        <div class="container">
+        <div class="container m-0 p-0">
           <ul class="d-flex">
             <li class="ms-4" v-for="link in links" :key="link.id">
               <a class="link" href="#">{{ link.toUpperCase() }}</a>
@@ -95,9 +95,11 @@ header > #find-the-company {
   background: rgb(45, 64, 77);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  .container > ul > li > i {
-    color: white;
+  .container {
+    justify-content: space-between;
+    ul > li > i {
+      color: white;
+    }
   }
 }
 
@@ -134,13 +136,14 @@ header > .jumbotron {
 #main-menu {
   height: 80px;
   background-color: transparent;
-  position: absolute;
-  top: 0;
-  z-index: 1;
   display: flex;
   align-items: center;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    padding-right: 8%;
   .container {
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     ul {
       align-items: center;
