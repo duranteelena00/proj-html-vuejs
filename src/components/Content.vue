@@ -19,7 +19,19 @@ import Main from "./components/Main.vue";
 
 export default {
   name: "Content",
-  components: Main
+  components: Main,
+  data(){
+    return {
+     news: [
+       {imgUrl: "src/assets/img/news-1.jpg",
+       title: "Increasing creativity is possible for everyone"},
+       {imgUrl: "src/assets/img/news-2.jpg",
+       title: "Becouse market research is part of the business plan"},
+       {imgUrl: "src/assets/img/news-3.jpg",
+       title: "Work from home is now a trend"},
+     ]
+    }
+  }
 };
 </script>
 

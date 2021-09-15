@@ -18,6 +18,18 @@ export default {
     Content,
     Footer,
   },
+  data() {
+    return {
+      logoUrl: "src/assets/img/logo_48.png",
+      contacts: {
+        "Open Hours": "Mon-Sat - 9:00-18:00",
+        number: "+1(305)1234-5678",
+        email: "hello@example.com",
+        office: "Main Avenue, 987",
+        links: ["Home", "About", "Services", "Pricing", "Blog"]
+      },
+    };
+  },
 };
 </script>
 
