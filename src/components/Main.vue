@@ -17,15 +17,15 @@
           <div class="row py-4">
             <div class="col">
               <div class="card p-0">
-                <i class="fas fa-award me-2"></i>
-                <h3 class="pb-3">Tradition</h3>
+                <h3 class="pb-3">Tradition <i class="fas fa-award ms-2"></i></h3>
+                
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>
             </div>
             <div class="col">
               <div class="card p-0">
-                <i class="fas fa-lock me-2"></i>
-                <h3 class="pb-3">Security</h3>
+                <h3 class="pb-3">Security<i class="fas fa-lock ms-3"></i></h3>
+                
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>
             </div>
@@ -33,18 +33,18 @@
           <div class="row py-4">
             <div class="col">
               <div class="card p-0">
-                <i class="far fa-edit me-2"></i>
                 <h3 class="pb-3">
-                  Certificate
+                  Certificate<i class="far fa-edit ms-3"></i>
                 </h3>
+                
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>
             </div>
             <div class="col">
               <div class="card p-0">
-                <i class="fas fa-graduation-cap me-2"></i>
+                
                 <h3 class="pb-3">
-                  Expertise
+                  Expertise<i class="fas fa-graduation-cap ms-3"></i>
                 </h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>

@@ -58,9 +58,7 @@
           </div>
           <div class="row">
             <div class="col d-flex align-items-center">
-              <input type="text" name="" id="" placeholder="Name" /><span
-                ><i class="fas fa-file-download"></i
-              ></span>
+              <input type="text" name="" id="" placeholder="Name" />
             </div>
             <div class="col">
               <input type="text" name="" id="" placeholder="Email" />
@@ -72,7 +70,6 @@
             </div>
             <div class="col d-flex align-items-center">
               <input type="text" placeholder="More Info" />
-              <span><i class="fas fa-angle-down"></i></span>
             </div>
           </div>
           <input type="textarea" placeholder="message" />
@@ -237,12 +234,7 @@ p {
   background: rgb(236, 236, 236);
   margin: 5px 0;
   width: 100%;
-}
-
-#contact-the-company .form i {
-  color: grey;
-  background: rgb(236, 236, 236);
-  padding: 9.65px;
+  position: relative;
 }
 
 #contact-the-company #contacts {
