@@ -112,6 +112,10 @@ p {
   }
 }
 
+.col {
+  flex-direction: column;
+}
+
 .card {
   min-height: 100%;
   padding: 25px 20px 40px 30px;
@@ -120,7 +124,6 @@ p {
     transform: scale(1.1);
   }
   i {
-    margin: 0;
     color: teal;
   }
 }

@@ -141,7 +141,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 p {
   color: rgb(148, 147, 147);
 }

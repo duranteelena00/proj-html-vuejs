@@ -17,13 +17,15 @@
           <div class="row py-4">
             <div class="col">
               <div class="card p-0">
-                <h3 class="pb-3"><i class="fas fa-award me-2"></i>Tradition</h3>
+                <i class="fas fa-award me-2"></i>
+                <h3 class="pb-3">Tradition</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>
             </div>
             <div class="col">
               <div class="card p-0">
-                <h3 class="pb-3"><i class="fas fa-lock me-2"></i>Security</h3>
+                <i class="fas fa-lock me-2"></i>
+                <h3 class="pb-3">Security</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>
             </div>
@@ -31,16 +33,18 @@
           <div class="row py-4">
             <div class="col">
               <div class="card p-0">
+                <i class="far fa-edit me-2"></i>
                 <h3 class="pb-3">
-                  <i class="far fa-edit me-2"></i>Certificate
+                  Certificate
                 </h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>
             </div>
             <div class="col">
               <div class="card p-0">
+                <i class="fas fa-graduation-cap me-2"></i>
                 <h3 class="pb-3">
-                  <i class="fas fa-graduation-cap me-2"></i>Expertise
+                  Expertise
                 </h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>
@@ -242,7 +246,6 @@ export default {
 }
 
 #company-services {
-  position: relative;
   .container {
     flex-direction: column;
   }
@@ -250,6 +253,7 @@ export default {
 
 #company-services i {
   font-size: 30px;
+  justify-content: flex-start;
 }
 
 #company-services .text > h2 > span.turquoise {
@@ -288,7 +292,7 @@ export default {
   color: rgb(148, 147, 147);
 }
 
-.card i:not(i.icon) {
+#pricing-plans .card i:not(i.icon) {
   float: right;
 }
 </style>
