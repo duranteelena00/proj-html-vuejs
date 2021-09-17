@@ -246,6 +246,7 @@ export default {
 }
 
 #company-services {
+  position: relative;
   .container {
     flex-direction: column;
   }
