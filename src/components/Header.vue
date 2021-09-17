@@ -2,13 +2,13 @@
   <header>
     <div id="find-the-company">
       <div class="container">
-        <span>{{ contacts.openHours }}</span>
+        <span><i class="fas fa-clock me-2"></i>{{ contacts.openHours }}</span>
         <ul class="d-flex align">
           <li class="ms-4">
-            <i class="fas fa-phone-alt me-1"></i>{{ contacts.number }}
+            <i class="fas fa-phone-alt me-2"></i>{{ contacts.number }}
           </li>
           <li class="ms-4">
-            <i class="fas fa-envelope me-1"></i>{{ contacts.email }}
+            <i class="fas fa-envelope me-2"></i>{{ contacts.email }}
           </li>
           <li class="ms-4"><i class="fab fa-facebook-f"></i></li>
           <li class="ms-4"><i class="fab fa-twitter"></i></li>
@@ -17,9 +17,14 @@
       </div>
     </div>
     <section class="jumbotron" id="hero">
-      <img src="@/assets/img/hero-image.png" alt="" />
+      <img class="background" src="@/assets/img/hero-image.png" alt="" />
       <nav id="main-menu">
-        <div class="container m-0 p-0">
+        <div class="container">
+          <div class="logo-container">
+            <span class="logo"
+              ><span class="turquoise">NEX</span><span>GEN</span></span
+            >
+          </div>
           <ul class="d-flex">
             <li class="ms-4" v-for="link in links" :key="link.id">
               <a class="link" href="#">{{ link.toUpperCase() }}</a>
@@ -39,13 +44,13 @@
         <button class="mx-1 transparent" type="button">READ MORE</button>
       </div>
     </section>
-    <section id="company-benefits">
+    <section id="company-benefits" class="light-turquoise">
       <div class="container">
         <div class="row">
           <div class="col-4">
             <div class="card">
               <i class="fas fa-users"></i>
-              <h4 class="my-3">Human Capital</h4>
+              <h3 class="my-3">Human Capital</h3>
               <p>
                 Humanizing business: Harness the power of technology to improve
                 the way people work.
@@ -55,7 +60,7 @@
           <div class="col-4">
             <div class="card">
               <i class="fas fa-chart-pie"></i>
-              <h4 class="my-3">Core Business</h4>
+              <h3 class="my-3">Core Business</h3>
               <p>
                 It takes innovative approaches to transform, modernize and run
                 existing platform.
@@ -65,7 +70,7 @@
           <div class="col-4">
             <div class="card">
               <i class="fas fa-chart-line"></i>
-              <h4 class="my-3">Performance</h4>
+              <h3 class="my-3">Performance</h3>
               <p>
                 Acheaving maximum impact and value from investments in finance
                 and supply chains.
@@ -89,16 +94,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header > #find-the-company {
-  color: rgb(187, 187, 187);
-  height: 50px;
-  background: rgb(45, 64, 77);
-  display: flex;
-  align-items: center;
-  .container {
-    justify-content: space-between;
-    ul > li > i {
-      color: white;
+header {
+  #find-the-company {
+    color: rgb(187, 187, 187);
+    height: 40px;
+    background: rgb(45, 64, 77);
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    .container {
+      justify-content: space-between;
     }
   }
 }
@@ -107,8 +112,7 @@ header > .jumbotron {
   background: black;
   height: 500px;
   position: relative;
-  display: flex;
-  img {
+  img.background {
     position: absolute;
     top: 0;
     width: 100%;
@@ -123,29 +127,35 @@ header > .jumbotron {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 14px;
     h1 {
-      font-size: 45px;
       color: white;
+      font-size: 45px;
     }
     p {
-      color: rgb(187, 187, 187);
+      color: rgb(149, 149, 149);
     }
   }
 }
 
 #main-menu {
-  height: 80px;
+  height: 65px;
+  width: 100%;
+  z-index: 2;
   background-color: transparent;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
   display: flex;
   align-items: center;
-    z-index: 2;
-    position: absolute;
-    right: 0;
-    padding-right: 8%;
+  justify-content: space-between;
   .container {
-    justify-content: flex-end;
-    align-items: center;
+    display: flex;
+    .logo-container {
+      flex-grow: 1;
+    }
     ul {
+      width: fit-content;
       align-items: center;
       li > a {
         color: white;
@@ -154,27 +164,19 @@ header > .jumbotron {
   }
 }
 
-a.link {
-  font-weight: bold;
-}
-
 header > #company-benefits {
-  padding: 60px 0;
-  width: 100%;
-  background: rgb(236, 235, 235);
   display: flex;
   align-items: center;
   .container {
     display: flex;
     align-items: center;
+    .row {
+      height: fit-content;
+    }
   }
 }
 
 .card {
-  min-height: 250px;
-  max-height: 380px;
-  padding: 30px;
-  border-radius: 5px;
   background: white;
   i {
     margin: 0;
@@ -182,19 +184,13 @@ header > #company-benefits {
     color: teal;
     font-size: 25px;
     border-radius: 50%;
-    background: rgb(195, 223, 233);
+    background: rgb(218, 236, 237);
   }
-  i:nth-of-type(2) {
-    transform: rotate();
+  h3 {
+    font-weight: 700;
   }
   p {
-    color: rgb(155, 154, 154);
+    color: rgb(148, 147, 147);
   }
-}
-
-.dots {
-  margin: 0;
-  padding: 0;
-  font-size: 25px;
 }
 </style>
