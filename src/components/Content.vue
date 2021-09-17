@@ -228,7 +228,8 @@ p {
 #contact-the-company > .container {
   flex-direction: row;
 }
-#contact-the-company.form {
+
+#contact-the-company .form {
   flex-grow: 1;
 }
 
